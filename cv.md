@@ -8,9 +8,11 @@
 * **Location**: Simferopol,Russia
 * **Phone**: +79787257377
 * **Email**: 21alex7777@gmail.com
+* **Discord**: Lelik Jan#9196
 * **GitHub**: [Lelik7777](https://github.com/Lelik7777)
 * [LinkedIn](https://www.linkedin.com/in/alex-kvachkov-aa245a237/)
 * [Telegram](https://t.me/Lelik_Jan)
+
 ****
 ##About me
 
