@@ -1,12 +1,6 @@
 # Aleksey Kvachkov
 
-***
-
-
-![](https://avatars.githubusercontent.com/u/80705108?v=4)
-
-
-***
+![photo](https://avatars.githubusercontent.com/u/80705108?v=4)
 
 ### Junior Frontend Developer
 
