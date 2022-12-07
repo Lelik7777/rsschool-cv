@@ -34,13 +34,13 @@ I am more of an introvert and perfectionist by nature.
 ## Skills and Proficiency:
 
 * HTML,CSS
-* Js/TypeScript
-* React,Redux
-* Git,GitHub
+* JavaScript / TypeScript
+* React, Redux
+* Git, GitHub
 * WebStorm
 * MUI
-* AXIOS/REST API
-* Formik,Lodash
+* AXIOS / REST API
+* Formik, Lodash
 
 ***
 
@@ -97,7 +97,7 @@ export const AJAX = async (url, uploadData = undefined) => {
 ## Courses:
 
 * **IT-Incubator** 2021-2022
-* **UDEMY**:Jonas Schmedtmann [
+* **UDEMY**: Jonas Schmedtmann [
   complete-javascript-course](https://github.com/Lelik7777/complete-javascript-course)
 
 ***
