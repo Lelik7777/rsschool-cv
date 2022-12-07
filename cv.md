@@ -8,7 +8,7 @@
 
 ## Contacts
 
-* **Location**: Simferopol,Russia
+* **Location**: Simferopol, Russia
 * **Phone**: +79787257377
 * **Email**: 21alex7777@gmail.com
 * **Discord**: Lelik Jan#9196
