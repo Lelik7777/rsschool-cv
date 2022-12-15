@@ -119,6 +119,9 @@ body {
 p {
     text-indent: var(--text-indend);
 }
+pre{
+    font-size: 12px;
+}
 .section-link{
     text-decoration: none;
 }
