@@ -134,3 +134,12 @@ pre{
     color: var(--color-link);
     line-height: var(--line-height);
 }
+.container-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer a{
+    display: flex;
+    align-items: center;
+}
