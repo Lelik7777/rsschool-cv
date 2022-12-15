@@ -89,7 +89,7 @@ export const AJAX = async (url, uploadData = undefined) => {
 
 * My pet projects: [CARDS](https://freiii21.github.io/friday-project/#/login)
   , [Social network](https://lelik7777.github.io/social_network_2021/#/)
-  ,  [To Do List](https://lelik7777.github.io/login)
+  ,  [To Do List](https://lelik7777.github.io/todo16v2/)
 * Internship at the company **Webstap** four months in 2022
 
 ***

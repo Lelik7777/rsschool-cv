@@ -2,9 +2,195 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>CV</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/IMG-10b42775388389b6d0c59237f6540239-V22%20-%20Copy.ico">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item">
+                    <a href="#summery" class="nav-link">Summery</a></li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item">
+                    <a href="#code" class="nav-link">Code</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link">Courses</a></li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item">
+                    <a href="#languages" class="nav-link">Languages</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="container main-container">
+        <section class="section" id="profile">
+            <img src="assets/img.png" alt="myPhoto">
+            <div class="profile-left">
+                <h1 class="my-name">Kvachkov Aleksey</h1>
+                <h4 class="title-section">frontend developer</h4>
+            </div>
+        </section>
+        <section class="section" id="contacts">
+            <h2 class="title-section">Contacts</h2>
+            <ul>
+                <li><b>Location: </b>
+                    <a href="https://yandex.ru/maps/geo/simferopol/1444428469/?ll=34.113793%2C44.947650&z=12.39"
+                       class="section-link">
+                        Simferopol, Russia</a>
+                </li>
+                <li><b>Phone: </b>
+                    <a href="tel:+79787257377" class="section-link"> +79787257377</a></li>
+                <li><b>Email: </b>
+                    <a href="mailto:21alex7777@gmail.com" class="section-link">21alex7777@gmail.com</a>
+                </li>
+                <li>
+                    <b>Discord: </b>
+                    <a href="https://discord.com/channels/@me" class="section-link">Lelik Jan#9196</a>
+                </li>
+                <li>
+                    <b>Github: </b>
+                    <a href="https://github.com/Lelik7777" class="section-link">Lelik7777</a>
+                </li>
+                <li>
+                    <b>Telegram: </b>
+                    <a href="https://t.me/Lelik_Jan" class="section-link">me</a>
+                </li>
+                <li>
+                    <b>LinkedIn: </b>
+                    <a href="https://www.linkedin.com/in/alex-kvachkov-aa245a237/" class="section-link">me</a>
+                </li>
+            </ul>
+        </section>
+        <section class="section" id="summery">
+            <h2 class="title-section">Summery</h2>
+            <p>I love to learn new things, because I think that acquiring new skills allows you to live an active life
+                and feel in demand both in society and in personal life. I like programming because it is constantly
+                updated, forcing me to constantly move forward and keeping a constant tone of life. It is also important
+                that the salaries here are quite high. In addition to programming I am fond of weightlifting, which
+                allows me to switch and maintain a good physical shape. Also I like reading books and being outdoors.
+            </p>
+            <p>I am more of an introvert and perfectionist by nature.</p>
+        </section>
+        <section class="section" id="skills">
+            <h2 class="title-section">Skills</h2>
+            <ul>
+                <li>HTML and CSS</li>
+                <li>JavaScript / TypeScript</li>
+                <li>React, Redux</li>
+                <li>Git, GitHub</li>
+                <li>WebStorm</li>
+                <li>MUI</li>
+                <li>AXIOS / REST API</li>
+                <li>FORMIK, LODASH</li>
+            </ul>
+        </section>
+        <section class="section" id="code">
+            <h2 class="title-section">Code</h2>
+            <pre>
+            import {TIME_TIMEOUT} from "./config";
 
+            const timeout = function (s) {
+            return new Promise(function (_, reject) {
+            setTimeout(function () {
+            reject(new Error(`Request took too long! Timeout after ${s} second`));
+            }, s * 1000);
+            });
+            };
+
+            export const AJAX = async (url, uploadData = undefined) => {
+            try {
+            const fetchPro = uploadData
+            ? fetch(url, {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(uploadData),
+            })
+            : fetch(url);
+            let res = await Promise.race([fetchPro, timeout(TIME_TIMEOUT)]);
+            const data = await res.json();
+            if (!res.ok) throw new Error(`${data.message}(Status:${res.status})`);
+            return data;
+            } catch (e) {
+            throw e; }}
+        </pre>
+        </section>
+        <section class="section" id="projects">
+            <h2 class="title-section">Projects</h2>
+            <ul>
+                <li><a href="https://freiii21.github.io/friday-project/#/login" class="section-link">Cards</a></li>
+                <li><a href="https://lelik7777.github.io/social_network_2021/#/" class="section-link">Social network</a>
+                </li>
+                <li><a href="https://lelik7777.github.io/todo16v2/" class="section-link">To Do List</a></li>
+            </ul>
+        </section>
+        <section class="section" id="courses">
+            <h2 class="title-section">Courses and Experience</h2>
+            <ul>
+                <li><a href="https://it-incubator.io/" class="section-link">IT-Incubator</a> 2021-2022</li>
+                <li>UDEMY:
+                    <a href="https://github.com/Lelik7777/complete-javascript-course" class="section-link">
+                        Jonas Schmedtmann complete-javascript-course
+                    </a> 2022
+                </li>
+                <li>Internship at the company <b>Webstap</b> four months in 2022</li>
+                <li><a href="https://rs.school/index.html" class="section-link">RS-school </a> 2022</li>
+            </ul>
+        </section>
+        <section class="section" id="education">
+            <h2 class="title-section">Education</h2>
+            <p><a href="https://cfuv.ru/" class="section-link">Crimean 'S. Georgijevsky' Medical Institute,
+                Simferopol</a></p>
+        </section>
+        <section class="section" id="languages">
+            <h2 class="title-section">Languages</h2>
+            <ul>
+                <li>English: A2</li>
+                <li>Russian: native</li>
+            </ul>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="container-footer">
+            <div>
+                <span>© </span>
+                <time>2022</time>
+                <span>Aleksey Kvachkov</span>
+            </div>
+
+            <a href="https://github.com/Lelik7777"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN0Uu0auB-_30X62d-vUYM-jhN4TkqPqgv6A&usqp=CAU"
+                    alt="github" height="45"></a>
+            <a href="https://rs.school/js/"><img
+                    src="https://rs.school/images/rs_school_js.svg"
+                    height="45" alt="rs-school"></a>
+        </div>
+
+    </div>
+</footer>
 </body>
 </html>
