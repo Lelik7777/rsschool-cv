@@ -31,7 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 5px;
+    padding: 0;
     margin: 0;
 
     background-color: var(--color-body);
@@ -45,6 +45,9 @@ body {
 
 .header {
     background-color: var(--color-main);
+    position: fixed;
+
+    width: 100%;
 }
 
 .nav-list {
@@ -163,13 +166,25 @@ pre {
     align-items: center;
 }
 
+@media (max-width: 950px) {
+    .header {
+        font-size: 0.8em;
+    }
+}
+
 @media (max-width: 768px) {
+    .header {
+        position: static;
+    }
+
     .section {
         width: 100%;
     }
-.nav-list{
-    flex-direction: column;
-}
+
+    .nav-list {
+        flex-direction: column;
+    }
+
     .nav-link {
         font-size: 0.6em;
     }
