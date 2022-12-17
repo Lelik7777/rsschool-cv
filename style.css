@@ -79,7 +79,9 @@ body {
 
     transition: color 0.5s;
 }
-
+.main{
+    padding-top: 60px;
+}
 .main-container {
     width: 100%;
     display: flex;
@@ -195,7 +197,7 @@ pre {
     }
 
     #profile img {
-        width: 100px;
+        width: 200px;
     }
 
     .footer {
@@ -206,3 +208,4 @@ pre {
         width: 50px;
     }
 }
+
