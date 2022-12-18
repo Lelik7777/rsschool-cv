@@ -79,9 +79,11 @@ body {
 
     transition: color 0.5s;
 }
-.main{
+
+.main {
     padding-top: 80px;
 }
+
 .main-container {
     width: 100%;
     display: flex;
@@ -119,6 +121,15 @@ body {
 
     font-family: 'Roboto', sans-serif;
     color: var(--color-section);
+}
+
+.section-link {
+    color: blue;
+    opacity: 0.5;
+}
+
+.section-link:hover {
+    opacity: 1;
 }
 
 .section:nth-child(n+4) {
@@ -168,7 +179,8 @@ pre {
     align-items: center;
     opacity: 0.5;
 }
-.footer a:hover{
+
+.footer a:hover {
     opacity: 1;
 }
 
@@ -182,9 +194,11 @@ pre {
     .header {
         height: auto;
     }
-    .main{
+
+    .main {
         padding-top: 180px;
     }
+
     .section {
         width: 100%;
     }
@@ -215,6 +229,7 @@ pre {
         width: 50px;
     }
 }
+
 @media (max-width: 350px) {
     #profile img {
         width: 150px;
