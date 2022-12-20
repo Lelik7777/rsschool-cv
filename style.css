@@ -205,7 +205,7 @@ pre {
     }
 
     .nav-list {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .nav-link {
